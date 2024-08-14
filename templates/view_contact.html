@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block head %}
+    <link rel="stylesheet" href="../static/css/view_contact.css">
+{% endblock %}
+{% block body %}
+<link rel="stylesheet" href="view_contact.css">
+<div id="spinner-container">
+    <div class="loader"></div>
+</div>
+<div class="contact-view">
+    <div class="avatar">
+        <img src="../static/imgs/Avatar.png" alt="" width="100px" height="100px">
+    </div>
+    <div class="contact-details">
+        <div class="heading">
+            <h2>Contact Details</h2>
+        </div>
+        <div id="contactInfo">
+            <p><strong>Name:</strong> <span id="contactName"></span></p>
+            <p><strong>Email:</strong> <span id="contactEmail"></span></p>
+            <p><strong>Phone:</strong> <span id="contactPhone"></span></p>
+        </div>
+        <div class="button-container">
+            <button id="backButton">Back to Contact List</button>
+        </div>
+    </div>
+</div>
+<script src="../static/js/view_contact.js"></script>
+{% endblock %}
